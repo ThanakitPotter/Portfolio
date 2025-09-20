@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications – Potter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="page-fade">
+  <div id="scrollbar"></div>
+
+  <header class="site-nav" role="navigation" aria-label="Primary">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">PORTFOLIO<span>.</span>THANAKIT</a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav>
+        <ul id="primaryMenu" class="menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html" class="is-active">Certifications</a></li>
+          <li><a class="btn btn--primary" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section section-tight">
+    <div class="container">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow">Credentials</p>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+      </header>
+
+      <div class="cert-list">
+        <!-- Cert 1 -->
+        <article class="card cred reveal tilt">
+          <div class="cred-media">
+            <span class="cred-badge">Verified</span>
+            <a class="img-link" target="_blank" rel="noopener"
+               href="https://www.coursera.org/verify/09D2X0VUJ6EL">
+              <img class="cover" src="assets/Certifications/c1.jpg"
+                   alt="Coursera: Customer Service with Python – Build a Chatbot using ChatGPT" loading="lazy" />
+            </a>
+          </div>
+          <div class="cred-body">
+            <h3 class="card-title">Customer Service with Python: Build a Chatbot using ChatGPT</h3>
+            <p class="meta muted">Coursera Project Network · Apr 18, 2025</p>
+            <ul class="key">
+              <li><b>What I did:</b> สร้างแชตบอทตอบคำถามลูกค้า กำหนดเป้าหมายและรูปแบบบทสนทนา</li>
+              <li><b>How:</b> Python + แนวคิด prompt design เบื้องต้น ทดสอบหลาย scenario</li>
+              <li><b>Skills:</b> ออกแบบ flow สนทนา, โครงสร้างโค้ด, ปรับแต่งคำสั่ง</li>
+            </ul>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Prompt Design</span><span class="tag">Chatbot</span></div>
+            <div class="links">
+              <a class="btn btn--ghost" target="_blank" rel="noopener"
+                 href="https://40d5a691-a6a4-4894-9de1-00ae434b67c7.filesusr.com/ugd/3ff48d_a523041549b141b38d87a268a07d0a16.pdf">
+                View Certification <span class="ext">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cert 2 -->
+        <article class="card cred reveal tilt">
+          <div class="cred-media">
+            <span class="cred-badge">Verified</span>
+            <a class="img-link" target="_blank" rel="noopener" href="https://media.mooc.ncsa.or.th/certificate/N0B2B076ECS07.pdf">
+              <img class="cover" src="assets/Certifications/c2.jpg"
+                   alt="MOOC/NCSA: Basic Cybersecurity" loading="lazy" />
+            </a>
+          </div>
+          <div class="cred-body">
+            <h3 class="card-title">Basic Cybersecurity</h3>
+            <p class="meta muted">MOOC (NCSA Thailand) · 22/11/2024 · ID: SPG-N0B2B076ECS07</p>
+            <ul class="key">
+              <li><b>What I did:</b> เรียนแนวคิดความปลอดภัยไซเบอร์พื้นฐานและแนวปฏิบัติที่ดี</li>
+              <li><b>How:</b> ฟิชชิง, 2FA, รหัสผ่าน, พื้นฐานเครือข่าย และแนวคิด CIA</li>
+              <li><b>Skills:</b> ความตระหนักด้านความปลอดภัย, แนวทางป้องกันเบื้องต้น</li>
+            </ul>
+            <div class="tags"><span class="tag">Cybersecurity</span><span class="tag">Awareness</span><span class="tag">Network Basics</span></div>
+            <div class="links">
+              <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://media.mooc.ncsa.or.th/certificate/N0B2B076ECS07.pdf">
+                View Certification <span class="ext">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div>© <span id="y"></span> Thanakit · Portfolio</div>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

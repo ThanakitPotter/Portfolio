@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Potter</title>
+  <meta name="description" content="Selected projects by Thanakit (Potter)" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-fade">
+
+  <!-- ===== NAV ===== -->
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">PORTFOLIO<span>.</span>THANAKIT</a>
+      <nav aria-label="หลัก">
+        <ul class="menu" id="primaryMenu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a class="is-active" href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a class="btn btn--primary" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="section section-tight">
+    <div class="container">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1 class="section-title">Projects</h1>
+        </div>
+      </header>
+
+      <section class="proj-list">
+
+        <!-- Resume Website -->
+        <article class="card proj tilt reveal" id="p-resume">
+          <div class="proj-media">
+            <img class="cover" src="assets/projects/p3.png" alt="Resume Website" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3 class="card-title">Resume Website (2025)</h3>
+            <p class="summary">
+              เว็บพอร์ตหน้าเดียว aesthetic สะอาด มี micro-interactions / cursor glow / shooting stars และ responsive ครบ
+            </p>
+            <ul class="key">
+              <li><b>What:</b> เว็บพอร์ตโฟกัสการเล่าเรื่องและส่วนสำคัญของผู้สมัคร</li>
+              <li><b>How:</b> HTML/CSS/JS (Vanilla), การ์ดเลย์เอาต์, scroll-reveal, 3D tilt</li>
+              <li><b>Impact:</b> โค้ดอ่านง่าย พร้อมนำไปต่อยอดได้ทันที</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- IoT PM2.5 -->
+        <article class="card proj tilt reveal" id="p-pm25">
+          <div class="proj-media">
+            <img class="cover" src="assets/projects/p1.jpg" alt="IoT PM2.5 Detector" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <h3 class="card-title">IoT PM2.5 Dust Detector (2025)</h3>
+            <p class="summary">
+              อุปกรณ์วัด PM2.5 แสดงผลเรียลไทม์บน LCD ต่อเซนเซอร์ วัดค่าแล้วแสดงตัวเลข/สถานะ
+            </p>
+            <ul class="key">
+              <li><b>What:</b> อุปกรณ์ IoT วัดฝุ่น</li>
+              <li><b>How:</b> Arduino (C/C++), sensor modules, <b>Python</b> สำหรับทดสอบ/บันทึกข้อมูล</li>
+              <li><b>Impact:</b> เห็นคุณภาพอากาศทันที และต่อยอดทำแดชบอร์ดได้</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">C/C++</span><span class="tag">Arduino</span><span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Game Minesweeper -->
+        <article class="card proj reveal tilt" id="p-minesweeper">
+          <div class="proj-media">
+            <img class="cover" src="assets/projects/p2.jpg"
+                 alt="Game Minesweeper – Python GUI" loading="lazy">
+          </div>
+
+          <div class="proj-body">
+            <h3 class="card-title">Game Minesweeper (2025)</h3>
+            <p class="summary">
+              เกมกวาดระเบิดบนเดสก์ท็อปด้วย <b>Python (GUI/Tkinter)</b>
+              มีโหมดความยาก ตัวจับเวลา ระบบธง (flag) และสรุปผลชนะ/แพ้
+            </p>
+
+            <ul class="key">
+              <li><b>What:</b> เกม Minesweeper พร้อมหน้าเลือกความยาก (Easy/Medium/Hard) และตารางคะแนน</li>
+              <li><b>How:</b> อัลกอริทึม <b>flood-fill</b> เผยช่องว่าง/ตัวเลข ป้องกันคลิกแรกโดนระเบิด จัดการ state กระดาน</li>
+              <li><b>Impact:</b> โชว์ทักษะวางโครงสร้างเกม การจัดการสถานะ และ UX ที่ครบ</li>
+            </ul>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Game</span>
+              <span class="tag">GUI</span>
+              <span class="tag">Algorithm</span>
+            </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div>© <span id="y"></span> Thanakit · Portfolio</div>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

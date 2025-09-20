@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Potter – Portfolio</title>
+  <meta name="description" content="Thanakit (Potter) – Student & Web Developer Portfolio" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-fade">
+  <div id="scrollbar"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="site-nav" role="navigation" aria-label="Primary">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">PORTFOLIO<span>.</span>THANAKIT</a>
+
+      <!-- Mobile toggle -->
+      <button id="navToggle" class="nav-toggle" type="button"
+              aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav>
+        <ul id="primaryMenu" class="menu">
+          <li><a href="#home" class="is-active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a class="btn btn--primary" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <section id="home" class="section hero hero--clean">
+      <div class="container hero-grid hero-balanced">
+        <div class="hero-copy">
+          <p class="eyebrow">PORTFOLIO</p>
+          <h1 class="display">Thanakit Inthrapacha</h1>
+          <p class="sub">APPLYING FOR FULL-STACK WEB DEVELOPER INTERNSHIP</p>
+
+          <div class="chip-row">
+            <span class="chip">Age 22</span>
+            <span class="chip">Born 20/10/2003</span>
+            <span class="chip">Started Web (2019)</span>
+          </div>
+
+          <div class="cta-row" style="margin-top:14px">
+            <button class="btn btn--primary" type="button"
+                    data-modal-open="showcase-modal" data-open-tab="projects">
+              PORTFOLIO <span class="btn-ico">↗</span>
+            </button>
+            <a class="btn btn--ghost" href="#about">Who I am</a>
+            <a class="btn btn--primary" href="Resume_Thanakit_inthrapacha.pdf" target="_blank" rel="noopener">
+              Download Resume (PDF)
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="avatar-wrap tilt">
+            <img class="avatar" src="assets/profile.jpg" alt="ภาพโปรไฟล์ Potter" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section section-tight">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 class="section-title">Who I am</h2>
+          </div>
+        </header>
+
+        <div class="about-grid about-balanced reveal">
+          <article class="card about-card span-2">
+            <h3 class="card-title">About Me</h3>
+            <p class="lead">
+              สวัสดีครับ ผมชื่อ <b>ธนกฤต อินทรประชา</b> หรือ <b>พอตเตอร์ (Potter)</b> อายุ 21 ปี
+              เริ่มสนใจการทำเว็บตั้งแต่ปี 2019 จากการลองเขียน <b>HTML</b> เว็บไซต์แรก—แม้จะเรียบง่าย
+              แต่ทำให้ผมหลงรักการเขียนโค้ด และพัฒนาทักษะต่อเนื่องจนวันนี้
+            </p>
+          </article>
+
+          <article class="card about-card">
+            <h3 class="card-title">Quick Focus</h3>
+            <ul class="list">
+              <li>มุ่งเน้นด้าน Front-End Web Development โดยใช้ HTML, CSS และ JavaScript</li>
+              <li>สนใจการสร้างเว็บไซต์ที่ ใช้งานง่ายและตอบสนองได้ดี</li>
+              <li>พัฒนาทักษะต่อเนื่องใน Frameworks และเทคโนโลยีใหม่ ๆ</li>
+              <li>ให้ความสำคัญกับ UI/UX Design และการเขียนโค้ดที่อ่านง่าย</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">PORTFOLIO</p>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <a class="btn btn--ghost" href="projects.html">See all</a>
+        </header>
+
+        <article class="card project-copy reveal">
+          <h3 class="pc-title">Resume Website (2025)</h3>
+          <ul class="pc-list">
+            <li><b>What:</b> เว็บพอร์ตหน้าเดียว aesthetic สะอาด มี micro-interactions</li>
+            <li><b>How:</b> HTML/CSS/JS, การ์ด-เลย์เอาต์, responsive</li>
+            <li><b>Impact:</b> สื่อความเป็นมืออาชีพ โค้ดอ่านง่าย พร้อมนำไปต่อยอด</li>
+          </ul>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </article>
+
+        <article class="card project-copy reveal">
+          <h3 class="pc-title">IoT PM2.5 Dust Detector (2025)</h3>
+          <ul class="pc-list">
+            <li><b>What:</b> อุปกรณ์วัด PM2.5 แสดงผลแบบเรียลไทม์บน LCD</li>
+            <li><b>How:</b> Arduino (C/C++), sensor modules, <b>Python</b> ทดสอบ/บันทึกข้อมูล</li>
+            <li><b>Impact:</b> เห็นคุณภาพอากาศทันที และต่อยอดทำแดชบอร์ดได้</li>
+          </ul>
+          <div class="tags"><span class="tag">C/C++</span><span class="tag">Arduino</span><span class="tag">Python</span></div>
+        </article>
+
+        <article class="card project-copy reveal">
+          <h3 class="pc-title">Game Minesweeper (2025)</h3>
+          <ul class="pc-list">
+            <li><b>What:</b> เกมกวาดระเบิดบนเดสก์ท็อป มีตัวจับเวลา ธง (flag) และสรุปผลชนะ/แพ้</li>
+            <li><b>How:</b> Python (GUI/Tkinter), อัลกอริทึม <b>flood-fill</b> เผยช่องว่าง/ตัวเลข, ป้องกันคลิกแรกโดนระเบิด</li>
+            <li><b>Impact:</b> โชว์ทักษะวางโครงสร้างเกม การจัดการ state และออกแบบ UX ที่ครบ</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Game</span>
+            <span class="tag">GUI</span>
+            <span class="tag">Algorithm</span>
+          </div>
+        </article>
+            
+    
+
+    <!-- ===== SKILLS & TOOLS ===== -->
+    <section class="section section-tight">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Capabilities</p>
+            <h2 class="section-title">Skills & Tools</h2>
+          </div>
+        </header>
+
+        <div class="two-col two-balanced">
+          <!-- Skills -->
+          <article class="card reveal">
+            <h3 class="card-title">Technical Skills</h3>
+            <ul class="skill-levels">
+              <li><span>HTML/CSS</span><span class="lvl lvl-adv">Advanced</span><i></i></li>
+              <li><span>JavaScript</span><span class="lvl lvl-int">Intermediate</span><i></i></li>
+              <li><span>Python</span><span class="lvl lvl-int">Intermediate</span><i></i></li>
+              <li><span>Java</span><span class="lvl lvl-bi">Basic–Intermediate</span><i></i></li>
+              <li><span>SQL</span><span class="lvl lvl-basic">Basic</span><i></i></li>
+            </ul>
+          </article>
+
+          <!-- Tools -->
+          <article class="card reveal">
+            <h3 class="card-title">Tools</h3>
+            <ul class="skill-levels">
+              <li><span>GitHub</span><span class="lvl lvl-bi">Basic–Intermediate</span><i></i></li>
+              <li><span>VS Code</span><span class="lvl lvl-adv">Advanced</span><i></i></li>
+              <li><span>Figma</span><span class="lvl lvl-adv">Advanced</span><i></i></li>
+              <li><span>Canva</span><span class="lvl lvl-adv">Advanced</span><i></i></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LANGUAGES ===== -->
+    <section class="section section-tight">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Profile</p>
+            <h2 class="section-title">Languages</h2>
+          </div>
+        </header>
+
+        <article class="card reveal">
+          <h3 class="card-title">Languages</h3>
+          <ul class="skill-levels">
+            <li><span>Thai</span><span class="lvl lvl-adv lvl-native">Native</span><i></i></li>
+            <li><span>English</span><span class="lvl lvl-basic">Basic</span><i></i></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section section-tight">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Education</p>
+            <h2 class="section-title">Timeline</h2>
+          </div>
+        </header>
+
+        <article class="card reveal" id="eduCard">
+          <ul class="edu edu-timeline">
+            <li>
+              <div class="t-range"><b>2022 – Present</b></div>
+              <div class="t-body">
+                <div class="t-head"><b>Bangkok University</b></div>
+                <div class="t-sub">B.IT – Computer Science</div>
+                <div class="t-sub">• <b>GPA:</b> 2.56</div>
+              </div>
+            </li>
+            <li>
+              <div class="t-range"><b>2019 – 2021</b></div>
+              <div class="t-body">
+                <div class="t-head"><b>Siam Business Administration Technological College</b></div>
+                <div class="t-sub">School of Information Technology</div>
+                <div class="t-sub">• <b>GPA:</b> 3.7</div>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <h2 class="section-title">Contact</h2>
+          </div>
+        </header>
+
+        <article class="card reveal" id="contactCard">
+          <div class="contact-columns">
+            <div class="c-block">
+              <h4>Phone</h4>
+              <p><a class="contact-link" href="tel:+66641028753">064-102-8753</a></p>
+            </div>
+
+            <div class="c-block">
+              <h4>Email</h4>
+              <p>
+                <a class="contact-link" href="mailto:thanakit.intcha@gmail.com">thanakit.intcha@gmail.com</a><br />
+                <a class="contact-link" href="mailto:thanakit.inth@bumail.net">thanakit.inth@bumail.net</a>
+              </p>
+            </div>
+
+            <div class="c-block">
+              <h4>Location</h4>
+              <p class="muted">49/210, Moo 1, Pornpiman Ville Village, Soi 13, Rangsit , Thanyaburi , Pathum Thani , 12110, Thailand</p>
+            </div>
+
+            <div class="c-block">
+              <h4>Follow</h4>
+              <div class="socials">
+                <a class="ico" href="https://www.facebook.com/Thanakitpotter/" target="_blank" rel="noopener">Facebook</a>
+                <a class="ico" href="https://www.instagram.com/potter_thanakit/" target="_blank" rel="noopener">Instagram</a>
+                <a class="ico" href="https://github.com/ThanakitPotter" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div>© <span id="y"></span> Thanakit · Portfolio</div>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ================= POPUP Projects / Certs ================= -->
+  <div id="showcase-modal" class="modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="showcaseTitle" tabindex="-1">
+      <button class="modal__close" data-modal-close aria-label="Close">×</button>
+
+      <!-- Tabs -->
+      <div class="modal__tabs" role="tablist" aria-label="Showcase sections">
+        <button class="tab is-active" role="tab"
+                id="tabbtn-projects" aria-controls="tab-projects" aria-selected="true">Projects</button>
+        <button class="tab" role="tab"
+                id="tabbtn-certs" aria-controls="tab-certs" aria-selected="false">Certifications</button>
+        <div class="tab__spacer"></div>
+      </div>
+
+      <!-- Panel: Projects -->
+      <section id="tab-projects" class="tab-panel is-active"
+               role="tabpanel" aria-labelledby="tabbtn-projects">
+        <header class="tab-head">
+          <h2 id="showcaseTitle">Projects</h2>
+          <p class="muted">ตัวอย่างโปรเจกต์เด่น</p>
+        </header>
+
+        <div class="panel-grid" data-scope="projects">
+          <article class="mcard">
+            <img class="mcover" src="assets/projects/p3.png" alt="Resume Website" loading="lazy" />
+            <h3 class="title">Resume Website</h3>
+            <p>HTML / CSS / JS</p>
+          </article>
+
+          <article class="mcard">
+            <img class="mcover" src="assets/projects/p1.jpg" alt="PM 2.5 IoT" loading="lazy" />
+            <h3 class="title">IoT PM2.5 Detector</h3>
+            <p>C/C++ · Arduino · Python</p>
+          </article>
+          
+          <article class="mcard">
+            <img class="mcover" src="assets/projects/p2.jpg"
+                alt="Game Minesweeper – Python GUI" loading="lazy" />
+            <h3 class="title">Game Minesweeper</h3>
+            <p>Python (GUI)</p>
+          </article>
+        </div>
+      </section>
+      
+
+      <!-- Panel: Certifications -->
+      <section id="tab-certs" class="tab-panel" role="tabpanel"
+               aria-labelledby="tabbtn-certs" hidden>
+        <header class="tab-head">
+          <h2>Certifications</h2>
+          <p class="muted">กดที่รูปเพื่อดูใบรับรอง</p>
+        </header>
+
+        <div class="panel-grid" data-scope="certs">
+          <article class="mcard cert">
+            <a class="img-link" target="_blank" rel="noopener"
+               href="https://www.coursera.org/verify/09D2X0VUJ6EL">
+              <img class="mcover" src="assets/Certifications/c1.jpg"
+                   alt="Coursera: Customer Service with Python – Build a Chatbot using ChatGPT" loading="lazy" />
+            </a>
+            <h3 class="title">Customer Service with Python</h3>
+            <p class="muted">Coursera · 2025</p>
+          </article>
+
+          <article class="mcard cert">
+            <a class="img-link" target="_blank" rel="noopener" href="https://media.mooc.ncsa.or.th/certificate/N0B2B076ECS07.pdf">
+              <img class="mcover" src="assets/Certifications/c2.jpg"
+                   alt="MOOC/NCSA: Basic Cybersecurity" loading="lazy" />
+            </a>
+            <h3 class="title">Basic Cybersecurity</h3>
+            <p class="muted">MOOC (NCSA) · 2024</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="modal__actions">
+        <a class="btn btn--primary" id="btnGoProjects" href="projects.html">ไปยังหน้าผลงาน</a>
+        <a class="btn btn--primary" id="btnGoCerts" href="certifications.html" hidden>ไปยังหน้าการรับรอง</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
